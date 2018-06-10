@@ -6,4 +6,4 @@ metadata:
 data:
   application.properties: |
     # Override the configuration properties here
-    booster.nameToGreet=raif
+    ldap.server.ip=ldap://172.29.120.112:389

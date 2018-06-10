@@ -50,7 +50,7 @@ public class CamelRouter extends RouteBuilder {
             //route
                 .route().routeId("auth-api")
                 .tracing().log("recieved username : ${body.username}")
-                .log("value of conigmap is ${properties:booster.nameToGreet}")
+                .log("value of conigmap is ${properties:ldap.server.ip}")
                 .to("direct:validateAuth")
         .endRest();
 
