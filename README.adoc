@@ -45,5 +45,5 @@ $ mvn clean -DskipTests fabric8:deploy -Popenshift
 * In your browser, navigate to the `MY_PROJECT_NAME` project in the OpenShift console.
 Wait until you can see that the pod for the `fuse-configmap-booster` application has started up.
 
-* Just above the entry for the `sfc-ldap-service` application on the `Overview` page, there is a URL of the form `http://sfc-ldap-service-myproject.xxxxx`.
+* Just above the entry for the `sfc-ldap-service` application on the `Overview` page, there is a URL of the form `http://sfc-ldap-service-MY_PROJECT_NAME.xxxxx`.
 Click on the URL to access the application and follow the instructions on that page.
