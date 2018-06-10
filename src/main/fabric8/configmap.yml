@@ -1,0 +1,9 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  # Must match the 'spring.application.name' property of the application
+  name: sfc-ldap-service
+data:
+  application.properties: |
+    # Override the configuration properties here
+    booster.nameToGreet=raif

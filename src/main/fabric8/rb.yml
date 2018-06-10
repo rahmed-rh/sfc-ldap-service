@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: RoleBinding
+metadata:
+  labels:
+    app: sfc-ldap-service
+  name: sfc-ldap-service-rb
+roleRef:
+  kind: Role
+  name: view
+  apiGroup: rbac.authorization.k8s.io
+subjects:
+- kind: ServiceAccount
+  name: sfc-ldap-service-sa
+  apiGroup: rbac.authorization.k8s.io
